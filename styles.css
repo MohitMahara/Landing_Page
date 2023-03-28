@@ -1,0 +1,130 @@
+  @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,900&family=Clicker+Script&family=Merriweather:wght@400;700;900&family=Poppins:ital,wght@0,200;0,400;0,500;0,900;1,600;1,700&family=Potta+One&family=Roboto+Mono:ital,wght@1,600&family=Roboto:wght@400;900&family=Rubik+Bubbles&family=Ubuntu+Condensed&display=swap');
+
+  *{
+    padding: 0px;
+    margin: 0px;
+  }
+
+  nav{
+    height: 60px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+     margin: auto;
+     padding-block: 10px;
+     align-items: center;
+  }
+
+  .brand{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Poppins",sans-serif;
+    color:#5d5d5d;
+    font-weight:500;
+  }
+
+  .menu{
+    display: flex;
+    gap: 30px;
+
+  }
+
+  .nav-link{
+    text-decoration: none;
+    color: #5d5d5d;
+    font-size: 17px;
+    font-family: "Roboto",sans-serif;
+    transform: 0.2s ease;
+    position: relative;
+  }
+
+  .nav-link::before{
+    content: "";
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    background-color: #4070f4;
+    bottom: -3px;
+    border-radius: 50px;
+    transform: scaleX(0);
+    transition: transform 0.3s linear;
+
+  }
+
+  .nav-link:hover:before{
+    transform: scaleX(1);
+  }
+
+  .btn{
+    padding: 10px 20px;
+    background-color: #342ae9;
+    color: white;
+    border-radius: 15px;
+    font-family: "Roboto",sans-serif;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+
+  .btn:hover{
+    color: white;
+    background-color: #1b11db;
+  }
+
+
+
+  li{
+    list-style-type: none;
+  }
+
+  /* home section*/
+
+  .home-section{
+    width: 100%;
+  }
+
+  .home-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+   height: 80vh;
+  }
+
+
+  .right,
+  .left{
+    width: 50%;
+  }
+
+  .right img{
+    width: 100%;
+  }
+
+  .left{
+    display: grid;
+    place-items: center;
+  }
+
+
+  .left h1{
+    font-size: 50px;
+    color: #5d5d5d;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .left p{
+    font-size: 17px;
+    font-family: "Poppins",sans-serif;
+    line-height: 1.5;
+    width: 95%;
+    color: #5d5d5d;
+    margin-bottom: 40px;
+  }
+
+  .left .btn{
+   font-size: 16px;
+   text-decoration: none;
+   font-family: "Roboto",sans-serif;
+  }
